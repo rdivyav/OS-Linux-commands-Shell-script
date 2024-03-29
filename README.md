@@ -98,33 +98,31 @@ diff file1 file2
 ### Create the following files file11, file22 as follows:
 
 cat > file11
-
+~~~
 Hello world
 This is my world
 ^d
-
+~~~
 cat > file22
-
+~~~
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
 ^d
-
-
-
+~~~
 cut -c1-3 file11
 ## OUTPUT
-
+~~~
 Hel
  Thi
-
+~~~
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+~~~
 1001 
 1002
  1003
-
+~~~
 cut -d "|" -f 2 file22
 ## OUTPUT
 ```
@@ -271,7 +269,7 @@ Unix is predecessor
 Linux is best in this World
 ```
 cat > file23
-
+~~~
 1001 | Ram | 10000 | HR
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
@@ -281,7 +279,7 @@ cat > file23
 1003 | Joe |  7000 | Developer
 1001 | Ram | 10000 | HR
 ^d
-
+~~~
 
 sed -n -e '3p' file23
 ## OUTPUT
@@ -479,12 +477,12 @@ cat file23 | tr [:lower:] [:upper:]
   ~~~
 
 cat < urllist.txt
-
+~~~
 www. yahoo. com
 www. google. com
 www. mrcet.... com
 ^d
- 
+ ~~~
 cat > urllist.txt
 ~~~
 www. yahoo. com
